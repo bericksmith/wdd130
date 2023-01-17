@@ -7,7 +7,7 @@
 }
 body {
     background-color: #fcfbfb;
-    font-family: 'Montserrat', Arial, sans-serif; 
+    font-family: 'Montserrat', Verdana, sans-serif; 
     font-size: 22px;
     margin: 0;
     padding: 0;
@@ -23,7 +23,7 @@ h4 {
 }
 .home-title{
     color: #000;
-    font-family: 'Raleway', Arial, sans-serif; 
+    font-family: 'Raleway' , Verdana, sans-serif; 
     font-size: 2em;
     margin-top: 10px;
 }
