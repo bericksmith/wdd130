@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:ital,wght@1,700&display=swap');
 
 /* CSS */
@@ -7,27 +6,45 @@
     margin:0 auto;
 }
 body {
-    background-color: #fcfbfb; 
+    background-color: #fcfbfb;
+    font-family: 'Montserrat', Arial, sans-serif; 
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 header {
     background-color:#6ac6e2;
 }
-.home-title{
-    color: #000;
+h2 {
+    margin:0;
 }
 h4 {
     color: #000;
 }
+.home-title{
+    color: #000;
+    font-family: 'Raleway', Arial, sans-serif; 
+    font-size: 2em;
+    margin-top: 10px;
+}
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 .logo {
     width: 80px;
+}
+#logo_link {
+    padding-top:5px;
+}
+.button-box{
+    text-align:center;
 }
 nav a{
     text-align:center;
     color:#0a0a0a;
     text-decoration:none;
+    padding: 35px;
 }
 nav a:hover {
     background-color: #2d4a73;
@@ -42,11 +59,12 @@ nav a:hover {
 #hero-msg h4{
     text-align:center;
 }
-.button-box{
-    text-align:center;
-}
+
 main section{
     text-align:center;
+}
+main section img{
+    box-sizing: border-box;
 }
 #background {
     height: 725px;
@@ -56,6 +74,10 @@ main section{
     background-color: #dbcca5;
     color: #000;
     text-decoration:none;
+    font-size: 18px;
+    margin-top: 50px;
+    border-radius: 5px;
+    padding: 15px 30px;
 }
 .book:hover, .join:hover {
     background-color: #2d4a73;
@@ -63,16 +85,32 @@ main section{
 }
 .msg {
     background-color: #6ac6e2;
+    line-height: 1.5em;
+    padding: 35px;
 }
 .msg h2 {
     color: #000;
+    font-family: 'Raleway', Arial, sans-serif;
 }
 .msg p {
     color: #0a0a0a;
+    font-size: .8em;
+    padding-bottom: 15px;
+}
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+.card-img{
+    border: 10px solid #2d4a73;
+}
+main section img {
+    box-sizing: border-box;
 }
 footer {
     background-color: #6ac6e2;
     color: #0a0a0a;
+    margin-top: 200px;
+    padding: 25px 50px;
 }
 footer p {
     font-size: 1.2em;
@@ -86,4 +124,8 @@ footer a {
 }
 footer a:hover {
     color: #0a0a0a;
+}
+
+footer .social img {
+    padding-top: 15px;
 }
