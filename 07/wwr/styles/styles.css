@@ -13,7 +13,7 @@ body {
     padding: 0;
 }
 header {
-    background-color:rgba(106,198,226,.9);
+    background-color:rgba(106,198,226,.8);
     display: grid;
     grid-template-columns: 150px auto;
 }
