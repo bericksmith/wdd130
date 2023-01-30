@@ -12,40 +12,44 @@
             grid-template-columns: 1fr 1fr;
             grid-gap: 0px;
           }
-        img {
+        .cherry-img {
             grid-column: 1/2;
             grid-row: 1/2;
         }
         .title {
             grid-column: 1/3;
             font-family: Georgia, 'Times New Roman', Times, serif; 
-            font-size: 120px;
+            font-size: 9em;
+            align-self: center;
             text-align: center;
-            justify-items: center;
             grid-row: 1/2;
             z-index: 1;
         }
         .red-cherries {
             grid-column: 2/3;
+            height: 100%;
             background-color: #c9c9c9;
             grid-row: 1/2;
         }
         h2 {
             color: crimson;
             font-family: Georgia, 'Times New Roman', Times, serif;
-            font-size: 60px;
-            grid-row: 1/2;
-            margin: 0;
-        }
+            font-size: 3em;
+            text-align: center;
+            position: relative;
+            bottom: -500px;
+         }
     </style>
 </head>
 <body>
     <div class="home-grid">
-        <img src="images\w06_cherries.png" alt="Cherries">
+        <div class="cherry-img">
+            <img src="images\w06_cherries.png" alt="Cherries">
+        </div>
         <h1 class="title">Tart & Sweet</h1>
-        <aside class="red-cherries">
+        <div class="red-cherries">
             <h2>Cherries</h2>
-        </aside>
+        </div>
     </div>
 </body> 
 </html>
