@@ -149,11 +149,14 @@ footer {
 }
 .review {
     border-radius: 5px;
+    border-color: #c9c9c9;
+    border: 1px;
     padding: 10px;
     margin: 25px;
     width:175px;
     background-color: #fff;
     box-shadow: 5px 5px 10px #c9c9c9;
+    text-align: center;
 }
 .review-star {
     width:15px;
