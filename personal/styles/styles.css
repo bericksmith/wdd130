@@ -121,7 +121,7 @@ nav a:hover {
 }
 #customer-reviews {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 #test {
     background-color: var(--accent1-color);
@@ -231,9 +231,9 @@ hr.white {
 nav {
       flex-direction: column;
     }
-  
 
 #rentals-box {
     flex-direction: column;
   }
+
 }
