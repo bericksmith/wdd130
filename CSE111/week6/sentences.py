@@ -10,19 +10,18 @@ def main():
         verb= get_verb(1, tense_word)
         noun= get_noun(1)
         adjective= get_adjective()
+        adverb= get_adverb()
         phrase= get_prepositional_phrase(1)
-        print(f'{determiner.capitalize()} {adjective} {noun} {verb} {phrase}.')
+        print(f'{determiner.capitalize()} {adjective} {noun} {verb} {phrase} {adverb}.')
     
     for tense_word in tense:
         determiner= get_determiner(2)
         verb= get_verb(2, tense_word)
         noun= get_noun(2)
+        adverb= get_adverb()
         phrase= get_prepositional_phrase(2)
-        print(f'{determiner.capitalize()} {adjective} {noun} {verb} {phrase}.')
+        print(f'{determiner.capitalize()} {adjective} {noun} {verb} {phrase} {adverb}.')
 
-    x = phrase.split()
-    
-    print(len(x))  
 
 def get_determiner(quantity):
     """Return a randomly chosen determiner. A determiner is
@@ -148,6 +147,15 @@ def get_adjective():
     words = ["good","new","great","little","attractive","beautiful"]
 
     # Randomly choose and return an adjective.
+    word = random.choice(words)
+    return word
+
+
+def get_adverb():
+
+    words = ["quickly","smoothly","speedily","continually","boldly","delightfully","hopelessly"]
+
+    # Randomly choose and return an adverb.
     word = random.choice(words)
     return word
 

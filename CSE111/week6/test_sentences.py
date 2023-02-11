@@ -1,6 +1,6 @@
 from sentences import get_determiner, \
     get_noun, get_verb, get_preposition,\
-    get_adjective, get_prepositional_phrase
+    get_adjective, get_adverb, get_prepositional_phrase
 
 import random
 import pytest
@@ -76,20 +76,28 @@ def test_get_noun():
         assert word in plural_noun
 
 def test_get_verb():
-    
+    # 1. Test the past tense Verb.
     single_past_verb = ["drank", "ate", "grew", "laughed", "thought",
         "ran", "slept", "talked", "walked", "wrote"]
+
+    # This loop will repeat the statements inside it 11 times.
+    # If a loop's counting variable is not used inside the
+    # body of the loop, many programmers will use underscore
+    # (_) as the variable name for the counting variable.
 
     for _ in range(11):
 
         word = get_verb(1, "past")
         assert word in single_past_verb
 
+    # 2. Test the present tense Verb.      
     single_present_verb = ["drinks", "eats", "grows", "laughs", "thinks",
         "runs", "sleeps", "talks", "walks", "writes"]
 
+    # This loop will repeat the statements inside it 11 times.
     for _ in range(11):
-
+        # Call the get_verb function which
+        # should return a present tense Verb.
         word = get_verb(1, "present")
         assert word in single_present_verb  
     
@@ -130,6 +138,14 @@ def test_get_adjective():
 
         word = get_adjective()
         assert word in adjective
+
+def test_get_adverb():
+    adverb = ["quickly","smoothly","speedily","continually","boldly","delightfully","hopelessly"]
+    
+    for _ in range(8):
+
+        word = get_adverb()
+        assert word in adverb
 
 def test_get_prepositional_phrase():
 
