@@ -3,8 +3,24 @@ import random
 tense = ["past", "present", "future"]
 
 def main():
+    """Program container uses the tense variable for two loops 
+    to create the 6 sentences. Calls made to get_determiner, 
+    get_verb, get noun, get_adjective, get_adverb and
+    get_prepositional_phrase in each loop/.  
+    
+    The six sentences must have the following characteristics:
+
+    Quantity	Verb Tense
+    a.	single	past
+    b.	single	present
+    c.	single	future
+    d.	plural	past
+    e.	plural	present
+    f.	plural	future
+    """
 
     print()
+    # loop through singular in past/present/future tense
     for tense_word in tense:
         determiner= get_determiner(1)
         verb= get_verb(1, tense_word)
@@ -13,7 +29,8 @@ def main():
         adverb= get_adverb()
         phrase= get_prepositional_phrase(1)
         print(f'{determiner.capitalize()} {adjective} {noun} {verb} {phrase} {adverb}.')
-    
+
+      # loop through plural in past/present/future tense  
     for tense_word in tense:
         determiner= get_determiner(2)
         verb= get_verb(2, tense_word)
@@ -128,6 +145,7 @@ def get_preposition():
         "from", "in", "into", "near", "of",
         "off", "on", "onto", "out", "over",
         "past", "to", "under", "with", "without"
+    Parameters: None
 
     Return: a randomly chosen preposition.
     """
@@ -143,7 +161,13 @@ def get_preposition():
     return word
 
 def get_adjective():
+    """Return a randomly chosen adjective
+    from this list of prepositions:
+        "good","new","great","little","attractive","beautiful"
+    Parameters: None
 
+    Return: a randomly chosen adjective.
+    """
     words = ["good","new","great","little","attractive","beautiful"]
 
     # Randomly choose and return an adjective.
@@ -152,7 +176,14 @@ def get_adjective():
 
 
 def get_adverb():
+    """Return a randomly chosen adjective
+    from this list of prepositions:
+        "quickly","smoothly","speedily","continually",
+        "boldly","delightfully","hopelessly"
+    Parameters: None
 
+    Return: a randomly chosen adjective.
+    """
     words = ["quickly","smoothly","speedily","continually","boldly","delightfully","hopelessly"]
 
     # Randomly choose and return an adverb.
@@ -170,14 +201,17 @@ def get_prepositional_phrase(quantity):
         quantity: an integer that determines if the
             determiner and noun in the prepositional
             phrase returned from this function should
-            be single or pluaral.
+            be single or plural.
     Return: a prepositional phrase.
     """
-
+    # Create a prepositional phrase using a preposition, determiner 
+    # and a noun. Plural or singular determined by quantity variable.
     if quantity == 1:
         phrase =  (f"{get_preposition()} {get_determiner(1)} {get_noun(1)}")
     else:
         phrase =  (f"{get_preposition()} {get_determiner(2)} {get_noun(2)}")
+
+    # return prepositional phrase
     return phrase
 
     
@@ -185,9 +219,6 @@ if __name__ == "__main__":
     main()
 
 
-
-
-#"always","usually","normally","often","sometimes","seldom","rarely","never"
 
 
 
