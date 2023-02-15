@@ -36,8 +36,8 @@ body {
     background-color: rgba(0, 0, 0, 40%);
 }
 #intro {
-padding-left: 20px;
-padding-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 #clean {
     display: grid;
@@ -58,7 +58,7 @@ padding-right: 20px;
     padding-right: 20px;
     color: #fff;
 }
-.clean-info h1{
+.clean-info h2{
     margin: 0px;
     padding: 10px;
     text-align: center;
