@@ -35,6 +35,37 @@ body {
     margin-top: 0px;
     background-color: rgba(0, 0, 0, 40%);
 }
+#intro {
+padding-left: 20px;
+padding-right: 20px;
+}
+#clean {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    margin-top: 0px;
+    padding-top: 5px;
+    height: 250px;
+    background-color: #55a9eb;   
+}
+
+.clean-lft {
+    grid-column: 1/2;
+}
+.clean-info {
+    grid-column: 2/3;
+    padding-top: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #fff;
+}
+.clean-info h1{
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+}
+.clean-rgt {
+    grid-column: 3/4;
+}
 .button {
     background-color: #1d3557;
     color: #fff;
@@ -118,6 +149,7 @@ nav a:hover {
 }
 .rental-gallery {
     margin: 20px;
+    text-align: center;
 }
 .rental-img {
     border-radius: 7px;
@@ -187,7 +219,7 @@ footer {
     display: grid;
     grid-template-columns: 4fr 1fr;
     grid-template-rows: 1fr auto;
-    gap: 10px;
+    grid-gap: 0px;
 }
 #footernav {
     grid-column: 1/2;
