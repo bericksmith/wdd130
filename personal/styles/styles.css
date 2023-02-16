@@ -45,7 +45,7 @@ body {
     margin-top: 0px;
     padding-top: 5px;
     height: 250px;
-    background-color: #55a9eb;   
+    background-color: var(--primary-color);   
 }
 
 .clean-lft {
@@ -214,7 +214,7 @@ nav a:hover {
 
 /* Footer CSS */
 footer {
-    background-color: var(--accent1-color);
+    background-color: var(--primary-color);
     padding: 10px;
     display: grid;
     grid-template-columns: 4fr 1fr;
@@ -267,6 +267,7 @@ hr.white {
 
 /* Responsive layout */
 @media (max-width: 800px) {
+
 nav {
       flex-direction: column;
     }
