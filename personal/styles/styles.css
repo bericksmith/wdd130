@@ -140,6 +140,9 @@ nav a:hover {
     color: #fff;
     background-color: var(--nav-hover-background-color);
 }
+.icon {
+    display: none;
+  }
 #rentals-box {
     margin-top: 50px;
     display: flex;
@@ -214,11 +217,14 @@ nav a:hover {
 .checked {
     color: #b9924f;
   }
+.nocheck {
+    color: #949494;
+  }
 
 /* Footer CSS */
 footer {
     background-color: var(--primary-color);
-    padding: 10px;
+    padding: 20px;
     display: grid;
     grid-template-columns: 4fr 1fr;
     grid-template-rows: 1fr auto;
@@ -268,15 +274,29 @@ hr.white {
     color: #fff;
 }
 
+
+
 /* Responsive layout */
 @media (max-width: 800px) {
 
 nav {
-      flex-direction: column;
+    flex-direction: column;
+    }
+#carousel {
+background-color: #1d3557;
+}   
+.carousel-img {
+    display: none;
     }
 
+a .icon {
+        float: right;
+    }
+.button {
+    display: none;
+    }
 #rentals-box {
     flex-direction: column;
-  }
+    }
 
 }
