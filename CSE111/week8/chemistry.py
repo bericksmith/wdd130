@@ -1,33 +1,16 @@
 from formula import parse_formula
 
 def main():
-
-
-    tlist = make_periodic_table()
-
-    for x in tlist:
-        print(x)
-
-def main():
-    # Get a chemical formula for a molecule from the user.
     formula = input("Please input a chemical formula:")
-    # Get the mass of a chemical sample in grams from the user.
     grams = float(input(f"Please enter the mass in grams of {formula}:"))
-    # Call the make_periodic_table function and
-    # store the periodic table in a variable.
     table = make_periodic_table()
-    # Call the parse_formula function to convert the
-    # chemical formula given by the user to a compound
-    # list that stores element symbols and the quantity
-    # of atoms of each element in the molecule.
     symbol_quantity_list = parse_formula(formula, table)
-    # Call the compute_molar_mass function to compute the
-    # molar mass of the molecule from the compound list.
+    print (symbol_quantity_list)
     molar_mass = compute_molar_mass(symbol_quantity_list, table)
-    # Compute the number of moles in the sample.
+    print (total_molar_mass)
     number_of_moles = grams / molar_mass
-    # Print the molar mass.
-    #print(f"Molar mass = {molar_mass}")
+
+    print(f"Molar mass = {molar_mass}")
     #print(f"Number of Moles = {number_of_moles}")
     #print(f"Formula Name: {get_formula_name(formula, known_molecules_dict)}")
     periodic_table = make_periodic_table()
@@ -131,7 +114,7 @@ def make_periodic_table():
         "Zr":	["Zirconium",	91.224]    
     }
        
-    return table
+    return period_table
 
 # Indexes for inner lists in the periodic table
 NAME_INDEX = 0
@@ -165,12 +148,15 @@ def compute_molar_mass(symbol_quantity_list, periodic_table_dict):
     # Do the following for each inner list in the
     # compound symbol_quantity_list:
         # Separate the inner list into symbol and quantity.
+
         # Get the atomic mass for the symbol from the dictionary.
+    table[SYMBOL_INDEX]
         # Multiply the atomic mass by the quantity.
+        ATOMIC_MASS_INDEX * QUANTITY_INDEX
         # Add the product into the total molar mass.
 
     # Return the total molar mass.
-    return
+    return 
 
 
 
