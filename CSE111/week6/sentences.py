@@ -1,5 +1,6 @@
 import random
 
+#Set a variable for the three difference tenses to use later in the program
 tense = ["past", "present", "future"]
 
 def main():
@@ -20,7 +21,7 @@ def main():
     """
 
     print()
-    # loop through singular in past/present/future tense
+    # loop through singular in past/present/future tense by calling the different functions that are included and print out what they return. 
     for tense_word in tense:
         determiner= get_determiner(1)
         verb= get_verb(1, tense_word)
@@ -30,7 +31,7 @@ def main():
         phrase= get_prepositional_phrase(1)
         print(f'{determiner.capitalize()} {adjective} {noun} {verb} {phrase} {adverb}.')
 
-      # loop through plural in past/present/future tense  
+    # loop through plural in past/present/future tense by calling the different functions that are included and print out what they return.  
     for tense_word in tense:
         determiner= get_determiner(2)
         verb= get_verb(2, tense_word)

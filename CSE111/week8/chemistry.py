@@ -152,7 +152,7 @@ def compute_molar_mass(symbol_quantity_list, periodic_table_dict):
         # Get the atomic mass for the symbol from the dictionary.
     table[SYMBOL_INDEX]
         # Multiply the atomic mass by the quantity.
-        ATOMIC_MASS_INDEX * QUANTITY_INDEX
+    ATOMIC_MASS_INDEX * QUANTITY_INDEX
         # Add the product into the total molar mass.
 
     # Return the total molar mass.

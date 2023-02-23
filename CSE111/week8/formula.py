@@ -102,3 +102,4 @@ def parse_formula(formula, periodic_table_dict):
     # will be a list in this form: ["symbol", quantity]
     elem_dict, _ = parse_r(formula, 0, 0)
     return list(elem_dict.items())
+    #return elems #this returns a dictionary
