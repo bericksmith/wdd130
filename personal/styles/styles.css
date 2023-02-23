@@ -13,13 +13,13 @@
 
    /* these colors below should be chosen from among your palette colors above */
   --headline-color-on-white: #1d3557;  /* headlines on a white background */ 
-  --headline-color-on-color: #f1faee; /* headlines on a colored background */ 
-  --paragraph-color-on-white: #1d3557; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: #f1faee; /* paragraph text on a colored background */ 
+  --headline-color-on-color: #ffffff; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #000000; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #ffffff; /* paragraph text on a colored background */ 
   --paragraph-background-color: #1d3557  ;
   --nav-link-color: #1d3557;
   --nav-background-color: #55a9eb;
-  --nav-hover-link-color: #f1faee;
+  --nav-hover-link-color: #ffffff;
   --nav-hover-background-color: #b9924f;
 }
 body {
@@ -36,9 +36,90 @@ body {
     background-color: rgba(0, 0, 0, 40%);
 }
 #intro {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 30px 20px 30px 20px;
 }
+
+#headline {
+    padding-top: 25px;
+    height: 50px;
+}
+#rental-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 0px;
+    padding-top: 0px;
+    background-color: #fff;  
+    border: 1px solid #b9924f; 
+    border-top: 0px;
+}
+.rental-hero {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    padding: 0px;
+    width: 100%;
+    height: 600px;
+}
+.rental-hero-img {
+    z-index: -1;
+}
+.rental-msg{
+    color: var(--headline-color-on-color);
+    font-size: 2em;
+    grid-column: 1/2;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 20px;
+    margin-top: -650px;
+}
+.rental-details {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.rental-button {
+    display:grid;
+    align-items: center;
+    justify-items: center;
+    background-color: var(--primary-color);
+    color: var(--headline-color-on-color);
+    grid-column: 2/3;
+    font-size: 1.2em;
+    font-weight: bold;
+    height: 100%;
+    transition-duration: 0.4s;
+    border: 0px;
+    cursor: pointer;
+}
+.rental-button:hover {
+  background-color: #b9924f;
+  color: white;
+}
+.rental-button a{
+    color: var(--headline-color-on-color);
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+}
+.amenities {
+    padding-top: 10px;
+    color: var(--accent2-color);
+    text-align: center;
+}
+#rentals-carousel {
+    overflow:auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    align-content: space-around;  
+    margin-bottom: 15px; 
+}
+.fas {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
 #clean {
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
@@ -56,7 +137,7 @@ body {
     padding-top: 0px;
     padding-left: 20px;
     padding-right: 20px;
-    color: #fff;
+    color:  var(--paragraph-color-on-color);
 }
 .clean-info h2{
     margin: 0px;
@@ -67,7 +148,7 @@ body {
     grid-column: 3/4;
 }
 .button {
-    background-color: #1d3557;
+    background-color: var(--primary-color);
     color: #fff;
     border-radius: 10px;
     text-align: center;
@@ -88,7 +169,7 @@ header {
     margin-top: 10px;
     padding-left: 10px;
     padding-top: 10px;
-    border:1px solid #b9924f;
+    border:1px solid var(--accent2-color);
 }
 .carousel-img {
     grid-column: 1/3;
@@ -108,7 +189,7 @@ header {
     padding: 25px;
 }
 h2 {
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 .logo {
     width: 250px;
@@ -132,30 +213,37 @@ nav a {
     text-decoration: none;
     padding: 10px;
     font-size: 18px;
-    color:#000;
+    color: var(--nav-link-color);
     border-radius: 10px;
     text-align: center;
   }
 nav a:hover {
-    color: #fff;
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+nav .nav-selected {
+    color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
 }
 .icon {
     display: none;
   }
 #rentals-box {
-    margin-top: 50px;
+    overflow:auto;
+    margin-top: 40px;
     display: flex;
     justify-content: center;
     align-items: stretch;
-    align-content: space-around;   
+    align-content: space-around;  
+    margin-bottom: 15px; 
 }
 .rental-gallery {
-    margin: 20px;
+    margin: 25px;
     text-align: center;
 }
 .rental-img {
     border-radius: 7px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .rental-img:hover {
     opacity: .75;
@@ -164,12 +252,7 @@ nav a:hover {
 #customer-reviews {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-}
-#test {
-    background-color: var(--accent1-color);
-    height: 400px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    padding: 30px 0px 30px 0px;
 }
 .popout {
     border-radius: 5px;
@@ -182,27 +265,26 @@ nav a:hover {
 .faq-container {
     width: 100%;
     background-color:  var(--accent2-color);
-    color: #fff;
+    color: var(--paragraph-color-on-color);
     padding:0px;
     margin-bottom: 2px;
 }
 .question {
-    padding:10px 10px 5px 10px;
+    padding:15px;
 }
 .faq-answer {
     padding:10px;
     background-color: #fff;
-    color: #000;
+    color: var(--paragraph-color-on-white);
 }
 .review {
     border-radius: 5px;
-    border-color: #c9c9c9;
-    border: 1px;
+    border: 1px solid #454545;
     padding: 10px;
     margin: 25px;
     width:170px;
     background-color: #fff;
-    box-shadow: 5px 5px 10px #c9c9c9;
+    box-shadow: 5px 5px 10px #858585;
     text-align: center;
 }
 .review-star {
@@ -215,11 +297,130 @@ nav a:hover {
     border-radius: 50px;
 }
 .checked {
-    color: #b9924f;
+    color: var(--accent2-color);
   }
 .nocheck {
     color: #949494;
   }
+
+
+#contact-intro {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 0px;
+    padding-top: 0px;
+    background-color: #fff;  
+    border-top: 0px;
+    height: 230px;
+}
+
+.contact-hero {
+    grid-column: 1/2;
+    padding: 0px;
+    width: 100%;
+}
+.contact-hero-img {
+    z-index: -1;
+}
+.contact-msg{
+    color: var(--headline-color-on-color);
+    text-shadow: 0 0 3px #000, 0 0 5px #000;
+    font-size: 2em;
+    grid-column: 1/2;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 20px;
+    margin-top: -280px;
+}
+
+
+
+#contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 0px;
+    padding-top: 0px;
+    background-color: #fff;  
+}
+#contact-form {
+    grid-column: 1/2;
+}
+#map-address {
+    grid-column: 2/3;
+}
+.map {
+    text-align: right;
+}
+.address {
+    text-align: right;
+    padding: 20px;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display:block; 
+    text-align:right;
+  }
+
+input[type=date] {
+    width: 50%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+  }
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+  }
+   
+  input[type=submit] {
+    background-color: #1d3557;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    font-weight: 500;
+    width: 200px;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+
 
 /* Footer CSS */
 footer {
@@ -247,7 +448,7 @@ footer {
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
-    color:#fff;
+    color:var(--paragraph-color-on-color);
     text-align: left;
     flex: 1;
 }
@@ -258,11 +459,11 @@ footer {
     text-align: right;
 }
 #social h2 {
-    color:#fff;
+    color: var(--paragraph-color-on-color);
 }
 hr.white {
-    color: #fff;
-    border-top: 3px solid #fff;
+    color:  var(--paragraph-color-on-color);
+    border-top: 2px solid  var(--paragraph-color-on-color);;
 }
 
 #copyrightinfo {
@@ -271,7 +472,7 @@ hr.white {
     align-self: end;
     font-style: italic; 
     font-size: .8em; 
-    color: #fff;
+    color: var(--paragraph-color-on-color);
 }
 
 
@@ -283,7 +484,7 @@ nav {
     flex-direction: column;
     }
 #carousel {
-background-color: #1d3557;
+background-color: var(--primary-color);
 }   
 .carousel-img {
     display: none;
