@@ -20,26 +20,25 @@
             <div class="button">BOOK NOW!</div>
         </header>
         <div id="contact-intro">
-            <div class="contact-hero">
-                <img class="contact-hero-img" src="images/contact-hero.jpg" alt="Contact Us">
-                <section class="contact-msg">
-                    <h1>Contact Us</h1>
-                </section> 
-            </div>
+            <img class="contact-hero-img" src="images/contact-hero.jpg" alt="Contact Us">
+            <section class="contact-msg">
+                <h1 class="contact-title">Contact Us</h1>
+            </section> 
         </div>
-        <div>
-            <p>Our offices are open 7 days a week for your convenience. Hours vary from season to season, but someone is always available on an emergency basis. Come visit us today! Call us at 888-867-5309.      </p>
+        <div id="contact-message">
+            <p>At Lake House Rentals we are happy to serve you. We strive to make your experience with us fast, easy and friendly.</p>
+            <p>Our offices are open 7 days a week for your convenience. Hours do vary from season to season, but someone is always available on an emergency basis. Come visit us today! Or give us a call at 888-867-5309.      </p>
         <br>
         </div>
-        <div id="contact-container">
+        <div id="contact-container">          
             <div id="contact-form">
-                <form action="/">
+                <form action="thankyou.html">
                     <div class="row">
                       <div class="col-25">
                         <label for="name">Name:</label>
                       </div>
                       <div class="col-75">
-                        <input type="text" id="name" name="name" placeholder="Your name..">
+                        <input type="text" id="name" name="name" placeholder="Your name.">
                       </div>
                     </div>
                     <div class="row">
@@ -47,14 +46,14 @@
                         <label for="email">Email:</label>
                       </div>
                       <div class="col-75">
-                        <input type="text" id="email" name="email" placeholder="Your email address..">
+                        <input type="text" id="email" name="email" placeholder="Your email address.">
                       </div>
                     </div>
                     <div class="row">
                       <div class="col-25">
                         <label for="property">Property:</label>
                       </div>
-                      <div class="col-75">
+                      <div class="col-50">
                         <select id="property" name="property">
                           <option value="1">Property #1</option>
                           <option value="2">Property #2</option>
@@ -66,6 +65,11 @@
                           <option value="8">Property #8</option>
                           <option value="9">Property #9</option>
                           <option value="10">Property #10</option>
+                          <option value="11">Property #11</option>
+                          <option value="12">Property #12</option>
+                          <option value="13">Property #13</option>
+                          <option value="14">Property #14</option>
+                          <option value="15">Property #15</option>
                         </select>
                       </div>
                     </div>
@@ -92,12 +96,15 @@
                         <label for="subject">Subject:</label>
                       </div>
                       <div class="col-75">
-                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                        <textarea id="subject" name="subject" placeholder="Your message to us." style="height:200px"></textarea>
                       </div>
                     </div>
                     <br>
                     <div class="row">
-                      <input type="submit" value="Submit">
+                        <div class="col-25"></div>
+                        <div class="col-75">
+                            <input type="submit" value="Submit">
+                        </div>
                     </div>
                     </form>
             </div>
