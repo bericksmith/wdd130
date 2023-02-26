@@ -134,9 +134,12 @@ body {
     overflow:auto;
     margin: 15px 0px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: stretch;
     align-content: space-around;  
+    direction:inherit;
+    position:relative;
+
 }
 .fas {
     padding: 5px;
@@ -236,6 +239,7 @@ nav .nav-selected {
     align-content: space-around; 
 }
 .rental-gallery {
+    box-sizing: border-box;
     margin: 25px;
     text-align: center;
 }
