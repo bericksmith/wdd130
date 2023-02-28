@@ -171,7 +171,7 @@ main section img {
 #faq-hero {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    margin-top: -100px; 
+    margin-top: -95px; 
     margin-bottom: 20px;
 }
 .faq-home-title{
@@ -277,6 +277,102 @@ footer a:hover {
 
 footer .social img {
     padding-top: 15px;
+}
+
+/* Form styling */
+form {
+    /* Center the form on the page */
+    margin: 0 auto;
+    width: 500px;
+    /* Form outline */
+    padding: 0em;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  form li + li {
+    margin-top: 1em;
+  }
+  
+  label {
+    /* Uniform size & alignment */
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+  }
+  
+  input,
+  textarea {
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    font: 1em sans-serif;
+  
+    /* Uniform text field size */
+    width: 300px;
+    box-sizing: border-box;
+  
+    /* Match form field borders */
+    border: 1px solid #999;
+  }
+  
+  input:focus,
+  textarea:focus {
+    /* Additional highlight for focused elements */
+    border-color: #000;
+  }
+  
+  textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+  
+    /* Provide space to type some text */
+    height: 5em;
+  }
+  
+  .contact-button {
+    display:grid;
+    align-items: center;
+    justify-items: center;
+    background-color: #2d4a73;
+    color: #fff;
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    height: 50px;
+    width: 100%;
+    transition-duration: 0.4s;
+    border: 0px;
+    border-radius: 0em 0em 25px 25px;
+    cursor: pointer;
+ }
+.contact-button:hover {
+    background-color: #b9924f;
+    color: white;
+}
+.contact-button a{
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#feedback {
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;      
+}
+.moveDown {
+    margin-top: 2.4em;
 }
 
 
