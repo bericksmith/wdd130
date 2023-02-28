@@ -22,5 +22,21 @@
   --nav-hover-link-color: #ffffff;
   --nav-hover-background-color: #b9924f;
 }
-  
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4em;
+    font-size: 18px;
+    text-align: center;
+    font-family: var(--paragraph-font);
+  }
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+  }
+
  
