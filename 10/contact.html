@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lake House Rentals</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://kit.fontawesome.com/7500db1389.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+        <header>
+          <img class="logo" src="images/logo.png" alt="logo">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="rentals.html">Rentals</a>
+                <a class="nav-selected" href="contact.html">Contact Us</a>
+            </nav>
+          <div class="button">BOOK NOW!</div>
+        </header>
+        <main>
+          <div id="contact-intro">
+              <img class="contact-hero-img" src="images/contact-hero.jpg" alt="Contact Us">
+              <section class="contact-msg">
+                  <h1 class="contact-title">Contact Us</h1>
+              </section> 
+          </div>
+          <div id="contact-message">
+              <p>At Lake House Rentals we are happy to serve you. We strive to make your experience with us fast, easy and friendly.</p>
+              <p>Our offices are open 7 days a week for your convenience. Hours do vary from season to season, but someone is always available on an emergency basis. Come visit us today! Or give us a call at 888-867-5309.      </p>
+          <br>
+          </div>
+          <div id="contact-container">          
+              <div id="contact-form">
+                  <form action="thankyou.html">
+                      <div class="row">
+                        <div class="col-25">
+                          <label for="name">Name:</label>
+                        </div>
+                        <div class="col-75">
+                          <input type="text" id="name" name="name" placeholder="Your name.">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-25">
+                          <label for="email">Email:</label>
+                        </div>
+                        <div class="col-75">
+                          <input type="text" id="email" name="email" placeholder="Your email address.">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-25">
+                          <label for="property">Property:</label>
+                        </div>
+                        <div class="col-50">
+                          <select id="property" name="property">
+                            <option value="1">Property #1</option>
+                            <option value="2">Property #2</option>
+                            <option value="3">Property #3</option>
+                            <option value="4">Property #4</option>
+                            <option value="5">Property #5</option>
+                            <option value="6">Property #6</option>
+                            <option value="7">Property #7</option>
+                            <option value="8">Property #8</option>
+                            <option value="9">Property #9</option>
+                            <option value="10">Property #10</option>
+                            <option value="11">Property #11</option>
+                            <option value="12">Property #12</option>
+                            <option value="13">Property #13</option>
+                            <option value="14">Property #14</option>
+                            <option value="15">Property #15</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-25">
+                            <label for="check-in">Check-in:</label>
+                          </div>
+                          <div class="col-75">
+                              <input type="date" id="check-in" name="check-in">
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-25">
+                            <label for="check-out">Check-out:</label>
+                          </div>
+                          <div class="col-75">
+                              <input type="date" id="check-out" name="check-out">
+                          </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-25">
+                          <label for="subject">Subject:</label>
+                        </div>
+                        <div class="col-75">
+                          <textarea id="subject" name="subject" placeholder="Your message to us." style="height:200px"></textarea>
+                        </div>
+                      </div>
+                      <br>
+                      <div class="row">
+                          <div class="col-25"></div>
+                          <div class="col-75">
+                              <input type="submit" value="Submit">
+                          </div>
+                      </div>
+                      </form>
+              </div>
+              <div id="map-address">
+                  <div class="map">
+                      <iframe width="550" height="550" id="gmap_canvas" src="https://maps.google.com/maps?q=yale%20dam%20washington&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+                  </div>
+                  <div class="address">
+                      <h2>Lake House Rentals</h2>
+                      <b>Address:</b> 12345 Lake House Lane<br>
+                      Smoodner, WA 98664<br>
+                      <b>Phone:</b> 888-867-5309<br>
+                      <b>Hours:</b> 8:30am - 5:00pm<br>
+                      <b>Email:</b> customercare@lakehouse.com
+                  </div>
+              </div>
+          </div>
+        </main>
+        <footer>
+            <div id="footernav">
+                <div class="footerlinks">
+                    <a href="index.html">Home</a>
+                    <a href="rentals.html">Rentals</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="site-plan.html">Site Plan</a>
+                </div>
+                <hr class="white">
+            </div>
+            <div id="copyrightinfo">Lake House Rentals &copy; 2023 - Berick Smith - WDD130.16</div>
+            <div id="social">
+                <h2>Follow Us On:</h2>
+                <a href="https://facebook.com" target="_blank"><img src="images/fb-mono.png" width="50" alt="fb icon"></a>
+                <a href="https://twitter.com" target="_blank"><img src="images/twitter-mono.png" width="50" alt="twitter icon"></a>
+                <a href="https://instagram.com" target="_blank"><img src="images/insta-mono.png" width="50" alt="instagram icon"></a>
+            </div>
+        </footer>
+        
+
+</body>
+</html>
+
+
