@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,500&display=swap');
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #1d3557   ;
+  --secondary-color: #3b78b4 ;
+  --accent1-color: #55a9eb;
+  --accent2-color: #b9924f;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: 'Montserrat', Tahoma, sans-serif;
+  --paragraph-font: Verdana, Geneva, Tahoma, sans-serif;
+
+   /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #1d3557;  /* headlines on a white background */ 
+  --headline-color-on-color: #ffffff; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #000000; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #ffffff; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #1d3557  ;
+  --nav-link-color: #1d3557;
+  --nav-background-color: #55a9eb;
+  --nav-hover-link-color: #ffffff;
+  --nav-hover-background-color: #b9924f;
+}
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-self: center;
+    align-self: center;
+    font-family: var(--paragraph-font);
+}
+#carousel {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 0px;
+    background-color: rgba(0, 0, 0, 40%);
+}
+.carousel-img {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 100%;
+    z-index: -1;
+}
+.carousel-msg{
+    color: #fff;
+    font-size: 1.8em;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: right;
+    margin: 0px;
+}
+.carousel-title {
+    padding: 20px;
+    margin: 0px;
+}
+#intro {
+    padding: 30px 20px;
+}
+#headline {
+    padding-top: 25px;
+    height: 50px;
+}
+#rental-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid #b9924f; 
+    border-top: 0px;
+}
+.rental-hero {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    padding: 0px;
+    width: 100%;
+    height: 600px;
+}
+.rental-hero-img {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    width: 100%;
+    z-index: -1;
+}
+.rental-msg {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    text-align: left;
+    margin: 0px;
+}
+.rental-title {
+    color: var(--headline-color-on-color);
+    text-shadow: 0 0 3px #000, 0 0 5px #000;
+    font-size: 3em;
+    padding: 20px;
+    margin: 0px;
+}
+.rental-details {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding: 0px 30px;
+}
+.rental-button {
+    display:grid;
+    align-items: center;
+    justify-items: center;
+    background-color: var(--primary-color);
+    color: var(--headline-color-on-color);
+    margin: 0px;
+    grid-column: 2/3;
+    font-size: 1.2em;
+    font-weight: bold;
+    height: 100%;
+    transition-duration: 0.4s;
+    border: 0px;
+    cursor: pointer;
+}
+.rental-button:hover {
+  background-color: #b9924f;
+  color: white;
+}
+.rental-button a{
+    color: var(--headline-color-on-color);
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+}
+.amenities {
+    padding-top: 10px;
+    color: var(--accent2-color);
+    text-align: center;
+}
+#rentals-carousel {
+    overflow:auto;
+    margin: 15px 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: space-around;  
+    direction:inherit;
+    position:relative;
+
+}
+.fas {
+    padding: 5px;
+}
+#clean {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    margin-top: 0px;
+    padding-top: 5px;
+    height: 250px;
+    background-color: var(--primary-color);   
+}
+.clean-lft {
+    grid-column: 1/2;
+}
+.clean-info {
+    grid-column: 2/3;
+    padding: 0px 20px;
+    color:  var(--paragraph-color-on-color);
+}
+.clean-info h2{
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+}
+.clean-rgt {
+    grid-column: 3/4;
+}
+.button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    align-self: center;
+    padding: 10px;
+    height: 25px;
+    width: 190px;
+}
+#logo_link {
+    padding:0px;
+    justify-self: center;
+    align-self: center;
+}
+header {
+    display: grid;
+    grid-template-columns: 250px auto 220px;
+    margin-top: 10px;
+    padding: 10px;
+    border:1px solid var(--accent2-color);
+}
+h2 {
+    font-size: 1.5em;
+}
+.logo {
+    width: 250px;
+    height: 80px;
+}
+nav {
+    background-color: #fff;
+    height:80px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    align-content: space-around;
+    padding-left: 30px;
+    margin: 0px;
+}
+nav a {
+    margin-right: 20px;
+    background-color: #fff;
+    min-width: 120px;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18px;
+    color: var(--nav-link-color);
+    border-radius: 10px;
+    text-align: center;
+  }
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+nav .nav-selected {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+.icon {
+    display: none;
+  }
+#rentals-box {
+    overflow:auto;
+    margin: 40px 0px 15px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    align-content: space-around; 
+}
+.rental-gallery {
+    box-sizing: border-box;
+    margin: 25px;
+    text-align: center;
+}
+.rental-img {
+    border-radius: 7px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.rental-img:hover {
+    opacity: .75;
+    transform: scale(1.1);
+}
+#customer-reviews {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    padding: 30px 0px;
+}
+.popout {
+    border-radius: 5px;
+    padding: 20px;
+    width:90%;
+    background-color: rgba(255, 255, 255, 20%);
+    box-shadow: 5px 5px 10px #000;
+    margin-left: 30px;
+}
+.faq-container {
+    width: 100%;
+    background-color:  var(--accent2-color);
+    color: var(--paragraph-color-on-color);
+    margin-bottom: 2px;
+}
+.question {
+    padding:15px;
+}
+.faq-answer {
+    padding:10px;
+    background-color: #fff;
+    color: var(--paragraph-color-on-white);
+}
+.review {
+    border-radius: 5px;
+    border: 1px solid #454545;
+    padding: 10px;
+    margin: 25px;
+    width: 170px;
+    background-color: #fff;
+    box-shadow: 5px 5px 10px #858585;
+    text-align: center;
+}
+.review-star {
+    width:15px;
+    height:15px;
+}
+.review-user {
+    width:100px;
+    height:100px;
+    border-radius: 50px;
+}
+.checked {
+    color: var(--accent2-color);
+  }
+.nocheck {
+    color: #949494;
+  }
+#contact-intro {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+.contact-hero-img {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 100%;
+    z-index: -1;
+}
+.contact-msg{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: left;
+    margin: 0px;
+}
+.contact-title {
+    color: var(--headline-color-on-color);
+    text-shadow: 0 0 3px #000, 0 0 5px #000;
+    font-size: 3em;
+    padding: 20px 0px 0px 20px;
+    margin: 0px;
+}
+#contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 0px;
+    padding-top: 0px;
+    background-color: #fff;  
+}
+#contact-form {
+    grid-column: 1/2;
+}
+#contact-message {
+    padding: 20px 20px;
+}
+#map-address {
+    grid-column: 2/3;
+}
+.map {
+    text-align: right;
+}
+.address {
+    text-align: right;
+    padding: 20px;
+}
+/* Forms CSS */
+
+label {
+    padding: 12px 12px 12px 0;
+    display:block; 
+    text-align:right;
+  }
+input[type=text], textarea {
+    width: 94%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+} 
+
+select {
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 0;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+  }
+
+input[type=date] {
+    width: 40%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+}
+input[type=submit] {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 18px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-family: var(--paragraph-font);
+    font-size: 18px;
+    font-weight: 900;
+}
+input[type=submit]:hover {
+    background-color:#3b78b4;
+}  
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+} 
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+.col-50 {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+  }
+  
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Thank you page */
+#thankyou {
+    padding-top: 50px;
+    text-align: center;
+}
+
+
+/* Footer CSS */
+footer {
+    background-color: var(--primary-color);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr auto;
+    grid-gap: 0px;
+}
+#footernav {
+    grid-column: 1/2;
+    grid-row:1/2;
+}
+
+.footerlinks {
+    height:80px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    align-content: space-around;
+}
+.footerlinks a {
+    min-width: 120px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    color:var(--paragraph-color-on-color);
+    text-align: left;
+    flex: 1;
+}
+#social {
+    grid-column: 2/3;
+    grid-row:1/3;
+    text-decoration: none;
+    text-align: right;
+}
+#social h2 {
+    color: var(--paragraph-color-on-color);
+}
+hr.white {
+    color:  var(--paragraph-color-on-color);
+    border-top: 2px solid  var(--paragraph-color-on-color);;
+}
+
+#copyrightinfo {
+    grid-column: 1/2;
+    grid-row:2/3;
+    align-self: end;
+    font-style: italic; 
+    font-size: .8em; 
+    color: var(--paragraph-color-on-color);
+}
+
+
+
+/* Responsive layout */
+@media (max-width: 800px) {
+
+nav {
+    flex-direction: column;
+    }
+#carousel {
+background-color: var(--primary-color);
+}   
+.carousel-img {
+    display: none;
+    }
+
+a .icon {
+        float: right;
+    }
+.button {
+    display: none;
+    }
+#rentals-box {
+    flex-direction: column;
+    }
+
+}
