@@ -246,6 +246,8 @@ nav .nav-selected {
 .rental-img {
     border-radius: 7px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 250px; 
+    height: 187px;
 }
 .rental-img:hover {
     opacity: .75;
@@ -352,6 +354,8 @@ nav .nav-selected {
     text-align: right;
     padding: 20px;
 }
+
+
 /* Forms CSS */
 
 label {
