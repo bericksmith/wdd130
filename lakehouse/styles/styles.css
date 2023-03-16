@@ -354,8 +354,6 @@ nav .nav-selected {
     text-align: right;
     padding: 20px;
 }
-
-
 .accordion {
     background-color: var(--accent2-color);
     color:  #fff;

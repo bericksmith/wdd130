@@ -5,50 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lake House Rentals | Rental Properties</title>
-    <link rel="stylesheet" href="styles/test.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <script src="https://kit.fontawesome.com/7500db1389.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
   
+<main>
 
+  
 
-        <div id="headline">
-            <h2>Other Rentals You Might Be Interested In!</h2>
-        </div>
-        <div class="media-scroller snaps-inline">
-            <div class="media-element">
-                <img class="rental-img" src="images/house4.jpg" alt="Rental 4 - Romantic Get-Away">
-                <h2>Romantic Get-Away</h2>
-                <img class="rental-stars" src="images/5-stars.png" alt="5 Star Property"> 379
-            </div>
-            <div class="media-element">
-                <img class="rental-img" src="images/house5.jpg" alt="Rental 1 - Wooded Paradise">
-                <h2>Wooded Paradise</h2>
-                <img class="rental-stars" src="images/5-stars.png" alt="5 Star Property"> 1,232
-            </div>   
-            <div class="media-element"> 
-                <img class="rental-img" src="images/house6.jpg" alt="Rental 2 - Family Friendly">
-                <h2>Family Friendly</h2>                
-                <img class="rental-stars" src="images/5-stars.png" alt="5 Star Property"> 782
-            </div>
-            <div class="media-element">
-                <img class="rental-img" src="images/house7.jpg" alt="Rental 3">
-                <h2>Supreme Fishing</h2>
-                <img class="rental-stars" src="images/5-stars.png" alt="5 Star Property"> 591
-            </div> 
-            <div class="media-element">
-                <img class="rental-img" src="images/house2.jpg" alt="Rental 4 - Amazing Views">
-                <h2>New House, Amazing Views</h2>
-                <img class="rental-stars" src="images/5-stars.png" alt="5 Star Property"> 379
-           </div> 
-            <div class="media-element">
-                <img class="rental-img" src="images/house3.jpg" alt="Rental 3 - Perfect Fishing Retreat">
-                <h2>Perfect Fishing Retreat</h2>
-                <img class="rental-stars" src="images/5-stars.png" alt="5 Star Property"> 591
-            </div>         
-        </div> 
-        
-    </main>   
+    
+    <button class="accordion">Do you allow early check-ins and late check-outs?</button>
+    <div class="panel">
+      <p>Early check-in and out is handled on a case-by-case basis depending on the availability of the property.  It is important that we have ample time to clean and prepare each rental in between visits by renters.  Because if this we may not be able to accommodate all these types of requests.  Please call us at 888-867-5309 and we can see it those options are available for your dates.</p>
+    </div>
+    
+    <button class="accordion">Do the rental properties come with sheets and towels, or do I need to bring my own?</button>
+    <div class="panel">
+      <p>Each of our rental properties are well stocked with towels, blankets, sheets, pillowcases etc. We also fully stock our bathrooms and kitchens with paper products and soap.  Our goal is to make it feel like home, so each property is fully stocked with your essentials.</p>
+    </div>
+    
+    <button class="accordion">What types of fees are involved in renting? (Cleaning, Pets, Smoking, Cancellation, etc.)</button>
+    <div class="panel">
+      <p>Each property has a weekly cleaning fee associated with it depending on the size of the property.  The fee ranges from $75-$500.  Cleaning fees are clearly marked on the individual pages for each property.<br>
+        We allow dogs in each of our rentals. The fee for each dog is $150 per week.<br>  
+        There is no smoking allowed inside any of our rentals.<br>
+        There is a $250 cancellation fee if you cancel within 14 days of your planned stay.</p>
+    </div>
+    
+    <button class="accordion">Do each of your rentals have TV and Internet available?</button>
+    <div class="panel">
+      <p>We know that staying connected is important to most of us.  Each of our rentals are equipped with TV and Internet.  Internet speeds vary are the different properties so we can't guarantee that!  Most have speeds fast enough to stream media over phones and computers though.</p>
+    </div>
+
+    <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
+
+</main> 
 
         
 
