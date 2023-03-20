@@ -9,6 +9,48 @@
     <script src="https://kit.fontawesome.com/7500db1389.js" crossorigin="anonymous"></script>
 
 </head>
+
+
+.accordion {
+  background-color: var(--accent2-color);
+  color:  #fff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+  transition: 0.4s;
+  margin-bottom: 4px;
+}
+
+.active, .accordion:hover {
+  background-color: var(--accent2-color);
+}
+
+.accordion:after {
+  content: '\002B';
+  color:  #fff;
+  font-size: 20px;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+
 <body>
   
 <main>
