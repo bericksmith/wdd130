@@ -178,6 +178,7 @@ body {
     padding: 10px;
     height: 25px;
     width: 190px;
+    cursor: pointer;
 }
 #logo_link {
     padding:0px;
